@@ -1,6 +1,5 @@
-@model:2.1.1=AutoRegulatoryNetwork "Auto-regulatory network (altered version)"
-@units
- substance=item
+@model:3.1.1=AutoRegulatoryNetwork "Auto-regulatory network (altered version)"
+ s=item, t=second, v=litre, e=item
 @compartments
  Cell
 @species
