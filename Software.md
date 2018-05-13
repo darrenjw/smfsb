@@ -30,9 +30,18 @@ There should be sufficient information provided in the vignette in order to get 
 
 There is an additional optional R Package which requires the `libSBML` R package to be installed. This is separate package, since `libSBML` is not on CRAN or R-Forge, and requires a manual install. The additional package is called `smfsbSBML`. Before attempting to install it, first install the `libSBML` R package, following the [libSBML installation instructions](http://sbml.org/Software/libSBML/Downloading_libSBML#R).
 
-Once you have successfully installed `libSBML`, it should be straightforward to install `smfsbSBML` from a source package.
-
-LINK TO SOURCE PACKAGE.
+Once you have successfully installed `libSBML`, it should be straightforward to install `smfsbSBML` from a source package. First download the source package: [smfsbSBML_0.1.tar.gz](http://www.staff.ncl.ac.uk/d.j.wilkinson/smfsb/3e/smfsbSBML_0.1.tar.gz). Then install from your *OS command line* (**not** from an R session) with:
+```bash
+R CMD INSTALL smfsbSBML_0.1.tar.gz
+```
+Assuming that it works, you should be able to load it into an R session with:
+```r
+library(smfsbSBML)
+```
+The main function provided by the library is `sbml2spn`, which reads and parses an SBML model into a simulatable SPN object.
+```r
+?sbml2spn
+```
 
 ## Scala library - scala-smfsb
 
