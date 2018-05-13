@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="AutoRegulatoryNetwork" name="Auto-regulatory network" substanceUnits="item" timeUnits="second" volumeUnits="litre" extentUnits="item">
+    <listOfCompartments>
+      <compartment id="Cell"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="Gene" compartment="Cell" initialAmount="10" hasOnlySubstanceUnits="true"/>
+      <species id="P2Gene" name="P2.Gene" compartment="Cell" initialAmount="0" hasOnlySubstanceUnits="true"/>
+      <species id="Rna" compartment="Cell" initialAmount="0" hasOnlySubstanceUnits="true"/>
+      <species id="P" compartment="Cell" initialAmount="0" hasOnlySubstanceUnits="true"/>
+      <species id="P2" compartment="Cell" initialAmount="0" hasOnlySubstanceUnits="true"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="RepressionBinding" name="Repression binding" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Gene" stoichiometry="1"/>
+          <speciesReference species="P2" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="P2Gene" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k1 </ci>
+              <ci> Gene </ci>
+              <ci> P2 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k1" value="1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="ReverseRepressionBinding" name="Reverse repression binding" reversible="false">
+        <listOfReactants>
+          <speciesReference species="P2Gene" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Gene" stoichiometry="1"/>
+          <speciesReference species="P2" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k1r </ci>
+              <ci> P2Gene </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k1r" value="10"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Transcription" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Gene" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Gene" stoichiometry="1"/>
+          <speciesReference species="Rna" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k2 </ci>
+              <ci> Gene </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k2" value="0.01"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Translation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Rna" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Rna" stoichiometry="1"/>
+          <speciesReference species="P" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k3 </ci>
+              <ci> Rna </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k3" value="10"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Dimerisation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="P" stoichiometry="2"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="P2" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k4 </ci>
+              <cn> 0.5 </cn>
+              <ci> P </ci>
+              <apply>
+                <minus/>
+                <ci> P </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k4" value="1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Dissociation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="P2" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="P" stoichiometry="2"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k4r </ci>
+              <ci> P2 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k4r" value="1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="RnaDegradation" name="RNA Degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Rna" stoichiometry="1"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k5 </ci>
+              <ci> Rna </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k5" value="0.1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="ProteinDegradation" name="Protein degradation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="P" stoichiometry="1"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k6 </ci>
+              <ci> P </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k6" value="0.01"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

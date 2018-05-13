@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="DimerKineticsDet" name="Dimerisation Kinetics (deterministic)" substanceUnits="mole" timeUnits="second" volumeUnits="litre" extentUnits="mole">
+    <listOfCompartments>
+      <compartment id="Cell" size="1e-15"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="P" compartment="Cell" initialConcentration="5e-07"/>
+      <species id="P2" compartment="Cell" initialConcentration="0"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="Dimerisation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="P" stoichiometry="2"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="P2" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Cell </ci>
+              <ci> k1 </ci>
+              <ci> P </ci>
+              <ci> P </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k1" value="500000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Dissociation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="P2" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="P" stoichiometry="2"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Cell </ci>
+              <ci> k2 </ci>
+              <ci> P2 </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k2" value="0.2"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

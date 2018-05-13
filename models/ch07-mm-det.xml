@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="MMKineticsDet" name="Michaelis-Menten Kinetics (deterministic)" substanceUnits="mole" timeUnits="second" volumeUnits="litre" extentUnits="mole">
+    <listOfCompartments>
+      <compartment id="Cell" size="1e-15"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="S" compartment="Cell" initialConcentration="5e-07"/>
+      <species id="E" compartment="Cell" initialConcentration="2e-07"/>
+      <species id="SE" compartment="Cell" initialConcentration="0"/>
+      <species id="P" compartment="Cell" initialConcentration="0"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="Binding" reversible="false">
+        <listOfReactants>
+          <speciesReference species="S" stoichiometry="1"/>
+          <speciesReference species="E" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="SE" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Cell </ci>
+              <ci> k1 </ci>
+              <ci> S </ci>
+              <ci> E </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k1" value="1000000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Dissociation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="SE" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="S" stoichiometry="1"/>
+          <speciesReference species="E" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Cell </ci>
+              <ci> k2 </ci>
+              <ci> SE </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k2" value="0.0001"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Conversion" reversible="false">
+        <listOfReactants>
+          <speciesReference species="SE" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="P" stoichiometry="1"/>
+          <speciesReference species="E" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> Cell </ci>
+              <ci> k3 </ci>
+              <ci> SE </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="k3" value="0.1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

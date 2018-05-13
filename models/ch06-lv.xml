@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="LotkaVolterra" substanceUnits="item" timeUnits="second" volumeUnits="litre" extentUnits="item">
+    <listOfCompartments>
+      <compartment id="Cell"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="Prey" compartment="Cell" initialAmount="50" hasOnlySubstanceUnits="true"/>
+      <species id="Predator" compartment="Cell" initialAmount="100" hasOnlySubstanceUnits="true"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="PreyReproduction" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Prey" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Prey" stoichiometry="2"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> c1 </ci>
+              <ci> Prey </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="c1" value="1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PredatorPreyInteraction" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Prey" stoichiometry="1"/>
+          <speciesReference species="Predator" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Predator" stoichiometry="2"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> c2 </ci>
+              <ci> Prey </ci>
+              <ci> Predator </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="c2" value="0.005"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PredatorDeath" reversible="false">
+        <listOfReactants>
+          <speciesReference species="Predator" stoichiometry="1"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> c3 </ci>
+              <ci> Predator </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="c3" value="0.6"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

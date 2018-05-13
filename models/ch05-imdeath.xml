@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="ImmigrationDeath" substanceUnits="item" timeUnits="second" volumeUnits="litre" extentUnits="item">
+    <listOfCompartments>
+      <compartment id="Cell"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="X" compartment="Cell" initialAmount="0" hasOnlySubstanceUnits="true"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="Immigration" reversible="false">
+        <listOfProducts>
+          <speciesReference species="X" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> lambda </ci>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="lambda" value="1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Death" reversible="false">
+        <listOfReactants>
+          <speciesReference species="X" stoichiometry="1"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> mu </ci>
+              <ci> X </ci>
+            </apply>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="mu" value="0.1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

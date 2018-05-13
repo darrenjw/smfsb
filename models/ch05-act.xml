@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="Activation" substanceUnits="item" timeUnits="second" volumeUnits="litre" extentUnits="item">
+    <listOfCompartments>
+      <compartment id="Cell"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="A" compartment="Cell" initialAmount="0" hasOnlySubstanceUnits="true"/>
+      <species id="I" compartment="Cell" initialAmount="1" hasOnlySubstanceUnits="true"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="Activation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="I" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="A" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> alpha </ci>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="alpha" value="0.5"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Inactivation" reversible="false">
+        <listOfReactants>
+          <speciesReference species="A" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="I" stoichiometry="1"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> beta </ci>
+          </math>
+          <listOfLocalParameters>
+            <localParameter id="beta" value="1"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
