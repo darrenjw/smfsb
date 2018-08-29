@@ -107,23 +107,19 @@ Code, software and other web links, by chapter
     `gillespie`, `discretise`, `gillespied`, `StepGillespie`, `simTs`,
     `simSample`, `simTimes` and `StepEulerSPN` are included
     (and documented) in the `smfsb` R package described above
--   Stochastic Lotka-Volterra example ([SBML](ch06-lv.xml),
-    [SBML-shorthand](ch06-lv.mod.txt))
+-   Stochastic Lotka-Volterra example ([SBML](models/ch06-lv.xml),
+    [SBML-shorthand](models/ch06-lv.mod))
+-   See also the [smfsbSBML](Software.md) R package for parsing SBML models into simulatable stochastic Petri nets
 
 **Software**
--   [SBW](http://www.sys-bio.org/sbwWiki/sysbio/sbw) - includes a
-    "gillespie" simulation service
 -   [COPASI](http://www.copasi.org/) - includes facilities for discrete
     stochastic simulation
--   [gillespie2](http://www.basis.ncl.ac.uk/Software.html) - a C
-    implementation of a SBML Level 2 discrete stochastic simulator
+-   [scala-smfsb](https://github.com/darrenjw/scala-smfsb) - Scala library re-implementing the functionality of the `smfsb` R package in a fast, efficient, compiled, strongly typed functional programming language
 
 **Web links**
--   [SBML test suite](http://sbml.org/Facilities/Online_SBML_Test_Suite)
-    for testing SBML-compliant continuous deterministic simulators
--   [SBML discrete stochastic model test
-    suite](http://dsmts.googlecode.com/) for testing SBML-compliant
-    stochastic simulators
+-   [SBML test suite](https://github.com/sbmlteam/sbml-test-suite/blob/master/README.md)
+    for testing SBML-compliant continuous deterministic simulators. Now also includes the *Discrete stochastic models test suite*, for testing stochastic simulators
+-   [Wikipedia](Runge Kutta): [](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods)
 
 
 ### Chapter 7: Case studies
