@@ -126,20 +126,20 @@ Code, software and other web links, by chapter
 
 **Code**
 -   Dimerisation kinetics model (continuous deterministic version)
-    ([SBML](ch07-dimer-det.xml),
-    [SBML-shorthand](ch07-dimer-det.mod.txt))
+    ([SBML](models/ch07-dimer-det.xml),
+    [SBML-shorthand](models/ch07-dimer-det.mod))
 -   Dimerisation kinetics model (discrete stochastic version)
-    ([SBML](ch07-dimer-stoch.xml),
-    [SBML-shorthand](ch07-dimer-stoch.mod.txt))
+    ([SBML](models/ch07-dimer-stoch.xml),
+    [SBML-shorthand](models/ch07-dimer-stoch.mod))
 -   Michaelis-Menten kinetics model (continuous deterministic version)
-    ([SBML](ch07-mm-det.xml), [SBML-shorthand](ch07-mm-det.mod.txt))
+    ([SBML](models/ch07-mm-det.xml), [SBML-shorthand](models/ch07-mm-det.mod))
 -   Michaelis-Menten kinetics model (discrete stochastic version)
-    ([SBML](ch07-mm-stoch.xml), [SBML-shorthand](ch07-mm-stoch.mod.txt))
+    ([SBML](models/ch07-mm-stoch.xml), [SBML-shorthand](models/ch07-mm-stoch.mod))
 -   Dimension-reduced Michaelis-Menten kinetics model (discrete
-    stochastic version) ([SBML](ch07-mm-stoch2.xml),
-    [SBML-shorthand](ch07-mm-stoch2.mod.txt))
--   lac operon model ([SBML](ch07-lac-stoch.xml),
-    [SBML-shorthand](ch07-lac-stoch.mod.txt))
+    stochastic version) ([SBML](models/ch07-mm-stoch2.xml),
+    [SBML-shorthand](models/ch07-mm-stoch2.mod))
+-   lac operon model ([SBML](models/ch07-lac-stoch.xml),
+    [SBML-shorthand](models/ch07-lac-stoch.mod))
 
 
 ### Chapter 8: Beyond the Gillespie algorithm
