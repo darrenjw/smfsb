@@ -80,10 +80,7 @@ Code, software and other web links, by chapter
     Bioconductor](http://darrenjw.wordpress.com/2010/01/30/yet-another-introduction-to-r-and-bioconductor/)
 -   e-book: L. Devroye (1986) [*Non-Uniform Random Variate
     Generation*](http://www.nrbook.com/devroye/)
--   e-book: J. E. Gentle, W. Hardle and Y. Mori (2004) [*Handbook of
-    Computational
-    Statistics*](http://fedc.wiwi.hu-berlin.de/xplore/ebooks/html/csa/)
--   Wikipedia: [Linear congruential generator](https://en.wikipedia.org/wiki/Linear_congruential_generator)
+-   [Wikipedia](http://en.wikipedia.org/): [Linear congruential generator](https://en.wikipedia.org/wiki/Linear_congruential_generator)
 
 ### Chapter 5: Markov processes
 
@@ -91,10 +88,10 @@ Code, software and other web links, by chapter
 -   The main R functions used in this chapter: `fmc`, `cfmc`, `imdeath`
     and `rdiff`, are included (and documented) in the `smfsb` R package
     described above
--   Gene activation example ([SBML](ch05-act.xml),
-    [SBML-shorthand](ch05-act.mod.txt))
--   Immigration-death example ([SBML](ch05-imdeath.xml),
-    [SBML-shorthand](ch05-imdeath.mod.txt))
+-   Gene activation example ([SBML](models/ch05-act.xml),
+    [SBML-shorthand](models/ch05-act.mod))
+-   Immigration-death example ([SBML](models/ch05-imdeath.xml),
+    [SBML-shorthand](models/ch05-imdeath.mod))
 
 **Web links**
 -   [Wikipedia](http://en.wikipedia.org/): [stochastic
