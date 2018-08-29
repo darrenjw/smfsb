@@ -1,0 +1,212 @@
+# Chapter notes
+
+Code, software and other web links, by chapter
+
+### Chapter 1: Introduction to biological modelling
+
+**Web links**
+-   [Wikipedia](http://en.wikipedia.org/): [Systems
+    biology](http://en.wikipedia.org/wiki/Systems_biology), [birth-death
+    process](http://en.wikipedia.org/wiki/Birth-death_process), [Markov
+    process](http://en.wikipedia.org/wiki/Markov_process),
+    [transcription](http://en.wikipedia.org/wiki/Transcription_%28genetics%29),
+    [translation](http://en.wikipedia.org/wiki/Translation_%28biology%29),
+    [gene regulation](http://en.wikipedia.org/wiki/Gene_regulation),
+    [chemical reaction](http://en.wikipedia.org/wiki/Chemical_reaction),
+    [elementary
+    reaction](http://en.wikipedia.org/wiki/Elementary_reaction),
+    [stoichiometry](http://en.wikipedia.org/wiki/Stoichiometry), [lac
+    operon](http://en.wikipedia.org/wiki/Lac_operon), [sigma
+    factor](http://en.wikipedia.org/wiki/Sigma_factor),
+    [ubiquitin](http://en.wikipedia.org/wiki/Ubiquitin), [epidemic
+    model](http://en.wikipedia.org/wiki/Epidemic_model),
+    [Lotka-Volterra](http://en.wikipedia.org/wiki/Lotka-Volterra)
+
+
+### Chapter 2: Representation of biochemical networks
+
+**Code**
+-   [Full SBML for the example auto-regulatory network](autoreg-3-1.xml)
+    (you might have to right-click on this and "save as", depending on
+    your browser)
+-   [SBML-shorthand for the auto-regulatory
+    network](autoreg-3-1.mod.txt)
+
+**Software**
+-   [JDesigner](http://www.sys-bio.org/sbwWiki/sysbio/jdesigner)
+-   [SBW](http://www.sys-bio.org/sbwWiki/sysbio/sbw)
+-   [COPASI](http://www.copasi.org/)
+-   [SBML-shorthand](http://www.staff.ncl.ac.uk/d.j.wilkinson/software/sbml-sh/)
+-   [SPiM](http://research.microsoft.com/en-us/projects/spim/)
+
+**Web links**
+-   [Petri Nets
+    World](http://www.informatik.uni-hamburg.de/TGI/PetriNets/)
+-   [Bio-PEPA](http://homepages.inf.ed.ac.uk/jeh/Bio-PEPA/biopepa.html)
+-   [SBML.org](http://www.sbml.org/)
+-   [SBML Documents](http://www.sbml.org/documents/)
+    (specifications, etc.)
+-   [BioModels database](http://www.biomodels.net/database/)
+-   [XML at CoverPages](http://xml.coverpages.org/xml.html)
+-   [MathML](http://www.w3.org/Math/)
+
+
+### Chapter 3: Probability models
+
+**Web links**
+-   [Wikipedia](http://en.wikipedia.org/):
+    [Probability](http://en.wikipedia.org/wiki/Probability),
+    [probability
+    theory](http://en.wikipedia.org/wiki/Probability_theory), [discrete
+    probability
+    distribution](http://en.wikipedia.org/wiki/Discrete_probability_distribution),
+    [continuous probability
+    distribution](http://en.wikipedia.org/wiki/Continuous_probability_distribution),
+    [Poisson process](http://en.wikipedia.org/wiki/Poisson_process)
+-   [Mathworld](http://mathworld.wolfram.com/):
+    [Probability](http://mathworld.wolfram.com/Probability.html)
+
+
+### Chapter 4: Stochastic simulation
+
+**Code**
+-   [mytable.txt](http://www.mas.ncl.ac.uk/~ndjw1/teaching/sim/mytable.txt)
+    (from the R mini-tutorial)
+
+**Software**
+-   [R Project](http://www.r-project.org/)
+-   [CRAN](http://cran.r-project.org/) (Comprehensive R Archive Network)
+
+**Web links**
+-   [Introduction to R and
+    Bioconductor](http://darrenjw.wordpress.com/2010/01/30/yet-another-introduction-to-r-and-bioconductor/)
+-   e-book: L. Devroye (1986) [*Non-Uniform Random Variate
+    Generation*](http://cg.scs.carleton.ca/~luc/rnbookindex.html)
+-   e-book: J. E. Gentle, W. Hardle and Y. Mori (2004) [*Handbook of
+    Computational
+    Statistics*](http://fedc.wiwi.hu-berlin.de/xplore/ebooks/html/csa/)
+
+
+### Chapter 5: Markov processes
+
+**Code**
+-   The main R functions used in this chapter: `fmc`, `cfmc`, `imdeath`
+    and `rdiff`, are included (and documented) in the `smfsb` R package
+    described above
+-   Gene activation example ([SBML](ch05-act.xml),
+    [SBML-shorthand](ch05-act.mod.txt))
+-   Immigration-death example ([SBML](ch05-imdeath.xml),
+    [SBML-shorthand](ch05-imdeath.mod.txt))
+
+**Web links**
+-   [Wikipedia](http://en.wikipedia.org/): [stochastic
+    process](http://en.wikipedia.org/wiki/Stochastic_process), [Markov
+    chain](http://en.wikipedia.org/wiki/Markov_chain), [Markov
+    process](http://en.wikipedia.org/wiki/Markov_process), [Ito
+    diffusion](http://en.wikipedia.org/wiki/It%C5%8D_diffusion)
+
+### Chapter 6: Chemical and biochemical kinetics
+
+**Code**
+-   The main R functions used in this chapter: `simpleEuler`,
+    `gillespie`, `discretise`, `gillespied`, `StepGillespie`, `simTs`,
+    `simSample`, `simTimes` and `StepEulerSPN` are included
+    (and documented) in the `smfsb` R package described above
+-   Stochastic Lotka-Volterra example ([SBML](ch06-lv.xml),
+    [SBML-shorthand](ch06-lv.mod.txt))
+
+**Software**
+-   [SBW](http://www.sys-bio.org/sbwWiki/sysbio/sbw) - includes a
+    "gillespie" simulation service
+-   [COPASI](http://www.copasi.org/) - includes facilities for discrete
+    stochastic simulation
+-   [gillespie2](http://www.basis.ncl.ac.uk/Software.html) - a C
+    implementation of a SBML Level 2 discrete stochastic simulator
+
+**Web links**
+-   [SBML test suite](http://sbml.org/Facilities/Online_SBML_Test_Suite)
+    for testing SBML-compliant continuous deterministic simulators
+-   [SBML discrete stochastic model test
+    suite](http://dsmts.googlecode.com/) for testing SBML-compliant
+    stochastic simulators
+
+
+### Chapter 7: Case studies
+
+**Code**
+-   Dimerisation kinetics model (continuous deterministic version)
+    ([SBML](ch07-dimer-det.xml),
+    [SBML-shorthand](ch07-dimer-det.mod.txt))
+-   Dimerisation kinetics model (discrete stochastic version)
+    ([SBML](ch07-dimer-stoch.xml),
+    [SBML-shorthand](ch07-dimer-stoch.mod.txt))
+-   Michaelis-Menten kinetics model (continuous deterministic version)
+    ([SBML](ch07-mm-det.xml), [SBML-shorthand](ch07-mm-det.mod.txt))
+-   Michaelis-Menten kinetics model (discrete stochastic version)
+    ([SBML](ch07-mm-stoch.xml), [SBML-shorthand](ch07-mm-stoch.mod.txt))
+-   Dimension-reduced Michaelis-Menten kinetics model (discrete
+    stochastic version) ([SBML](ch07-mm-stoch2.xml),
+    [SBML-shorthand](ch07-mm-stoch2.mod.txt))
+-   lac operon model ([SBML](ch07-lac-stoch.xml),
+    [SBML-shorthand](ch07-lac-stoch.mod.txt))
+
+
+### Chapter 8: Beyond the Gillespie algorithm
+
+**Code**
+-   The main R functions used in this chapter: `StepFRM`, `StepPTS`, and
+    `StepCLE` are included (and documented) in the `smfsb` R package
+    described above
+
+**Software**
+-   [STOCKS](http://www.sysbio.pl/stocks/)
+-   [SynBioSS](http://synbioss.sourceforge.net/)
+-   [FERN](http://www.bio.ifi.lmu.de/software/fern)
+-   [MesoRD](http://mesord.sourceforge.net/)
+-   [StochSim](http://www.ebi.ac.uk/~lenov/stochsim.html)
+-   [Smoldyn](http://www.smoldyn.org/)
+
+[]()
+
+### Chapter 9: Bayesian inference and MCMC
+
+**Code**
+-   The main R functions used in this chapter: `normgibbs` and `metrop`
+    are included (and documented) in the `smfsb` R package described
+    above
+
+**Software**
+-   [WinBUGS](http://www.mrc-bsu.cam.ac.uk/bugs/)
+-   [OpenBugs](http://www.openbugs.info/w/)
+-   [JAGS](http://sourceforge.net/projects/mcmc-jags/)
+-   [rjags](http://cran.r-project.org/web/packages/rjags/) - R interface
+    to JAGS
+
+**Web links**
+-   [Bayesian inference and
+    R](http://cran.r-project.org/web/views/Bayesian.html) (from CRAN)
+
+
+### Chapter 10: Inference for stochastic kinetic models
+
+**Code**
+-   The main R functions used in this chapter: `pfMLLik`, `as.timedData`
+    and `mcmcSummary` are included (and documented) in the `smfsb` R
+    package described above. A pMCMC demo can be run with
+    `demo("PMCMC")`.
+
+**Web links**
+-   Darren Wilkinson's [publication
+    list](/d.j.wilkinson/research/publications/index.html)
+
+
+### Chapter 11: Conclusions
+
+**Web links**
+-   [Darren Wilkinson's research blog](http://darrenjw.wordpress.com/)
+-   [CaliBayes](http://www.calibayes.ncl.ac.uk/) - project on Bayesian
+    calibration of biological simulators
+
+
+
+
