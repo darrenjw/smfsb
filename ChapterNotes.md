@@ -119,7 +119,7 @@ Code, software and other web links, by chapter
 **Web links**
 -   [SBML test suite](https://github.com/sbmlteam/sbml-test-suite/blob/master/README.md)
     for testing SBML-compliant continuous deterministic simulators. Now also includes the *Discrete stochastic models test suite*, for testing stochastic simulators
--   [Wikipedia](Runge Kutta): [](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods)
+-   [Wikipedia](https://en.wikipedia.org/): [Runge Kutta](https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods)
 
 
 ### Chapter 7: Case studies
