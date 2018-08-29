@@ -31,15 +31,13 @@ Code, software and other web links, by chapter
     network](models/autoreg-3-1.mod)
 
 **Software**
--   [JDesigner](http://www.sys-bio.org/sbwWiki/sysbio/jdesigner)
--   [SBW](http://www.sys-bio.org/sbwWiki/sysbio/sbw)
+-   [CellDesigner](http://www.celldesigner.org/)
 -   [COPASI](http://www.copasi.org/)
 -   [SBML-shorthand](http://www.staff.ncl.ac.uk/d.j.wilkinson/software/sbml-sh/)
 -   [SPiM](http://research.microsoft.com/en-us/projects/spim/)
 
 **Web links**
--   [Petri Nets
-    World](http://www.informatik.uni-hamburg.de/TGI/PetriNets/)
+-   [Petri Nets World](http://www.informatik.uni-hamburg.de/TGI/PetriNets/)
 -   [Bio-PEPA](http://homepages.inf.ed.ac.uk/jeh/Bio-PEPA/biopepa.html)
 -   [SBML.org](http://www.sbml.org/)
 -   [SBML Documents](http://www.sbml.org/documents/)
