@@ -27,10 +27,8 @@ Code, software and other web links, by chapter
 
 **Code**
 -   [Full SBML for the example auto-regulatory network](models/autoreg-3-1.xml)
-    (you might have to right-click on this and "save as", depending on
-    your browser)
 -   [SBML-shorthand for the auto-regulatory
-    network](models/autoreg-3-1.mod.txt)
+    network](models/autoreg-3-1.mod)
 
 **Software**
 -   [JDesigner](http://www.sys-bio.org/sbwWiki/sysbio/jdesigner)
