@@ -26,11 +26,11 @@ Code, software and other web links, by chapter
 ### Chapter 2: Representation of biochemical networks
 
 **Code**
--   [Full SBML for the example auto-regulatory network](autoreg-3-1.xml)
+-   [Full SBML for the example auto-regulatory network](models/autoreg-3-1.xml)
     (you might have to right-click on this and "save as", depending on
     your browser)
 -   [SBML-shorthand for the auto-regulatory
-    network](autoreg-3-1.mod.txt)
+    network](models/autoreg-3-1.mod.txt)
 
 **Software**
 -   [JDesigner](http://www.sys-bio.org/sbwWiki/sysbio/jdesigner)
@@ -162,16 +162,25 @@ Code, software and other web links, by chapter
 -   [STOCKS](http://www.sysbio.pl/stocks/)
 -   [SynBioSS](http://synbioss.sourceforge.net/)
 -   [FERN](http://www.bio.ifi.lmu.de/software/fern)
--   [MesoRD](http://mesord.sourceforge.net/)
 -   [StochSim](http://www.ebi.ac.uk/~lenov/stochsim.html)
--   [Smoldyn](http://www.smoldyn.org/)
 
 []()
 
-### Chapter 9: Bayesian inference and MCMC
+### Chapter 9: Spatially extended systems
 
 **Code**
--   The main R functions used in this chapter: `normgibbs` and `metrop`
+* 
+**Software**
+-   [MesoRD](http://mesord.sourceforge.net/)
+-   [Smoldyn](http://www.smoldyn.org/)
+
+
+
+
+### Chapter 10: Bayesian inference and MCMC
+
+**Code**
+-   The main R functions used in this chapter: `normgibbs`, `metrop`, `metropolisHastings` and `abcRun`
     are included (and documented) in the `smfsb` R package described
     above
 
@@ -183,11 +192,10 @@ Code, software and other web links, by chapter
     to JAGS
 
 **Web links**
--   [Bayesian inference and
-    R](http://cran.r-project.org/web/views/Bayesian.html) (from CRAN)
+-   [Bayesian inference and R](http://cran.r-project.org/web/views/Bayesian.html) (from CRAN)
 
 
-### Chapter 10: Inference for stochastic kinetic models
+### Chapter 11: Inference for stochastic kinetic models
 
 **Code**
 -   The main R functions used in this chapter: `pfMLLik`, `as.timedData`
@@ -196,16 +204,14 @@ Code, software and other web links, by chapter
     `demo("PMCMC")`.
 
 **Web links**
--   Darren Wilkinson's [publication
-    list](/d.j.wilkinson/research/publications/index.html)
+-   Darren Wilkinson's [publication list](https://www.staff.ncl.ac.uk/d.j.wilkinson/research/publications/index.html)
 
 
-### Chapter 11: Conclusions
+### Chapter 12: Conclusions
 
 **Web links**
 -   [Darren Wilkinson's research blog](http://darrenjw.wordpress.com/)
--   [CaliBayes](http://www.calibayes.ncl.ac.uk/) - project on Bayesian
-    calibration of biological simulators
+
 
 
 
