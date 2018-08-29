@@ -72,16 +72,18 @@ Code, software and other web links, by chapter
 **Software**
 -   [R Project](http://www.r-project.org/)
 -   [CRAN](http://cran.r-project.org/) (Comprehensive R Archive Network)
+-   [R Manuals](http://www.stats.bris.ac.uk/R/manuals.html)
+-   [RStudio](https://www.rstudio.com/)
 
 **Web links**
 -   [Introduction to R and
     Bioconductor](http://darrenjw.wordpress.com/2010/01/30/yet-another-introduction-to-r-and-bioconductor/)
 -   e-book: L. Devroye (1986) [*Non-Uniform Random Variate
-    Generation*](http://cg.scs.carleton.ca/~luc/rnbookindex.html)
+    Generation*](http://www.nrbook.com/devroye/)
 -   e-book: J. E. Gentle, W. Hardle and Y. Mori (2004) [*Handbook of
     Computational
     Statistics*](http://fedc.wiwi.hu-berlin.de/xplore/ebooks/html/csa/)
-
+-   Wikipedia: [Linear congruential generator](https://en.wikipedia.org/wiki/Linear_congruential_generator)
 
 ### Chapter 5: Markov processes
 
