@@ -20,12 +20,12 @@ The book has ISBN-10 **113854928-2** and ISBN-13 **978-113854928-9**. It can be 
 ### Links
 
 * [Software](Software.md) - installing and running software associated with the book
-  * smfsb
-  * smfsbSBML
-  * SBML-shorthand
-  * scala-smfsb
+  * [smfsb](Software.md#r-package---smfsb)
+  * [smfsbSBML](Software.md#additional-r-package---smfsbsbml)
+  * [SBML-shorthand](https://www.staff.ncl.ac.uk/d.j.wilkinson/software/sbml-sh/)
+  * [scala-smfsb](https://github.com/darrenjw/scala-smfsb)
 * [Models](models/) - Models described in the book, in [SBML](http://sbml.org/Main_Page) and [SBML-shorthand](https://www.staff.ncl.ac.uk/d.j.wilkinson/software/sbml-sh/)
-* [Chapter notes](ChapterNotes.md)
+* [Chapter notes](ChapterNotes.md) including web links
 * **Errata** - will link when available
 * Note that you may wish to [download a copy of this repo](https://github.com/darrenjw/smfsb/archive/master.zip) (or clone it) for off-line use
 
