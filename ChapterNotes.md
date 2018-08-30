@@ -193,6 +193,9 @@ Code, software and other web links, by chapter
     package described above. A pMCMC demo can be run with
     `demo("PMCMC")`.
 
+**Software**
+-   [scala-smfsb](https://github.com/darrenjw/scala-smfsb) - Scala library re-implementing the functionality of the `smfsb` R package in a fast, efficient, compiled, strongly typed functional programming language - includes inference algorithms
+
 **Web links**
 -   Darren Wilkinson's [publication list](https://www.staff.ncl.ac.uk/d.j.wilkinson/research/publications/index.html)
 
