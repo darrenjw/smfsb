@@ -151,6 +151,7 @@ Code, software and other web links, by chapter
     described above
 
 **Software**
+-   [StochSS](https://github.com/StochSS)
 -   [SynBioSS](http://synbioss.sourceforge.net/)
 -   [FERN](http://www.bio.ifi.lmu.de/software/fern)
 
