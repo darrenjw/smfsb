@@ -28,7 +28,9 @@ There should be sufficient information provided in the vignette in order to get 
 
 ## Additional R package - smfsbSBML
 
-There is an additional optional R Package which requires the `libSBML` R package to be installed. This is separate package, since `libSBML` is not on CRAN or R-Forge, and requires a manual install. The additional package is called `smfsbSBML`. Before attempting to install it, first install the `libSBML` R package, following the [libSBML installation instructions](http://sbml.org/Software/libSBML/Downloading_libSBML#R).
+There is an additional optional R Package for parsing SBML models into simulatable stochastic Petri net models. It is optional and separate from the main package because it has an additional dependency which is less straightforward to install.
+
+The optional package first requires the `libSBML` R package to be installed, which is not on CRAN or R-Forge, and therefore requires a manual install. Install the `libSBML` R package, following the [libSBML installation instructions](http://sbml.org/Software/libSBML/Downloading_libSBML#R). Be sure to test that the installation has worked before proceeding.
 
 Once you have successfully installed `libSBML`, it should be straightforward to install `smfsbSBML` from a source package. First download the source package: [smfsbSBML_0.1.tar.gz](http://www.staff.ncl.ac.uk/d.j.wilkinson/smfsb/3e/smfsbSBML_0.1.tar.gz). Then install from your *OS command line* (**not** from an R session) with:
 ```bash
@@ -38,10 +40,16 @@ Assuming that it works, you should be able to load it into an R session with:
 ```r
 library(smfsbSBML)
 ```
+This command should return without error if the package is successfully installed.
+
 The main function provided by the library is `sbml2spn`, which reads and parses an SBML model into a simulatable SPN object.
 ```r
 ?sbml2spn
 ```
+
+## SBML-shorthand
+
+The book makes extensive use of a shorthand notation for SBML. Python scripts are available for translating back and forth between SBML and SBML-shorthand. These scripts rely on libSBML and the libSBML python bindings, so these must be installed first. See the [SBML-shorthand website](https://www.staff.ncl.ac.uk/d.j.wilkinson/software/sbml-sh/) for further details.
 
 ## Scala library - scala-smfsb
 
