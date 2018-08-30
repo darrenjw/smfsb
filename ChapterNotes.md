@@ -189,8 +189,7 @@ Code, software and other web links, by chapter
 ### Chapter 11: Inference for stochastic kinetic models
 
 **Code**
--   The main R functions used in this chapter: `pfMLLik`, `as.timedData`
-    and `mcmcSummary` are included (and documented) in the `smfsb` R
+-   The main R functions used in this chapter: `pfMLLik`, `as.timedData`, `metropolisHastings`, `mcmcSummary`, `abcRun` and `abcSmc` are included (and documented) in the `smfsb` R
     package described above. A pMCMC demo can be run with
     `demo("PMCMC")`.
 
@@ -201,7 +200,7 @@ Code, software and other web links, by chapter
 ### Chapter 12: Conclusions
 
 **Web links**
--   [Darren Wilkinson's research blog](http://darrenjw.wordpress.com/)
+-   [Darren Wilkinson's blog](http://darrenjw.wordpress.com/)
 
 
 
