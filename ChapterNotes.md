@@ -34,6 +34,7 @@ Code, software and other web links, by chapter
 -   [CellDesigner](http://www.celldesigner.org/)
 -   [COPASI](http://www.copasi.org/)
 -   [SBML-shorthand](http://www.staff.ncl.ac.uk/d.j.wilkinson/software/sbml-sh/)
+-   [libSBML](http://sbml.org/Software/libSBML) - library for parsing and generating SBML
 -   [SPiM](http://research.microsoft.com/en-us/projects/spim/)
 
 **Web links**
@@ -109,9 +110,9 @@ Code, software and other web links, by chapter
     (and documented) in the `smfsb` R package described above
 -   Stochastic Lotka-Volterra example ([SBML](models/ch06-lv.xml),
     [SBML-shorthand](models/ch06-lv.mod))
--   See also the [smfsbSBML](Software.md) R package for parsing SBML models into simulatable stochastic Petri nets
 
 **Software**
+-   [smfsbSBML](Software.md#additional-r-package---smfsbsbml) R package for parsing SBML models into simulatable stochastic Petri nets
 -   [COPASI](http://www.copasi.org/) - includes facilities for discrete
     stochastic simulation
 -   [scala-smfsb](https://github.com/darrenjw/scala-smfsb) - Scala library re-implementing the functionality of the `smfsb` R package in a fast, efficient, compiled, strongly typed functional programming language
