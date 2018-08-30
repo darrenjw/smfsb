@@ -176,14 +176,16 @@ Code, software and other web links, by chapter
     above
 
 **Software**
--   [WinBUGS](http://www.mrc-bsu.cam.ac.uk/bugs/)
--   [OpenBugs](http://www.openbugs.info/w/)
 -   [JAGS](http://sourceforge.net/projects/mcmc-jags/)
--   [rjags](http://cran.r-project.org/web/packages/rjags/) - R interface
+  -   [rjags](http://cran.r-project.org/web/packages/rjags/) - R interface
     to JAGS
+-   [Stan](http://mc-stan.org/)
+  -   [rstan](http://mc-stan.org/rstan/)
+-   [WinBUGS](https://www.mrc-bsu.cam.ac.uk/software/bugs/the-bugs-project-winbugs/)
+-   [OpenBugs](http://www.openbugs.net/w/FrontPage)
 
 **Web links**
--   [Bayesian inference and R](http://cran.r-project.org/web/views/Bayesian.html) (from CRAN)
+-   [Bayesian inference and R](http://cran.r-project.org/web/views/Bayesian.html) (Task view from CRAN)
 
 
 ### Chapter 11: Inference for stochastic kinetic models
