@@ -176,13 +176,11 @@ Code, software and other web links, by chapter
     above
 
 **Software**
--   [JAGS](http://sourceforge.net/projects/mcmc-jags/)
-  -   [rjags](http://cran.r-project.org/web/packages/rjags/) - R interface
-    to JAGS
--   [Stan](http://mc-stan.org/)
-  -   [rstan](http://mc-stan.org/rstan/)
--   [WinBUGS](https://www.mrc-bsu.cam.ac.uk/software/bugs/the-bugs-project-winbugs/)
+-   [JAGS](http://sourceforge.net/projects/mcmc-jags/) ([rjags](http://cran.r-project.org/web/packages/rjags/) - R interface
+    to JAGS)
+-   [Stan](http://mc-stan.org/) ([rstan](http://mc-stan.org/rstan/))
 -   [OpenBugs](http://www.openbugs.net/w/FrontPage)
+-   [WinBUGS](https://www.mrc-bsu.cam.ac.uk/software/bugs/the-bugs-project-winbugs/)
 
 **Web links**
 -   [Bayesian inference and R](http://cran.r-project.org/web/views/Bayesian.html) (Task view from CRAN)
