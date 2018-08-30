@@ -150,20 +150,20 @@ Code, software and other web links, by chapter
     described above
 
 **Software**
--   [STOCKS](http://www.sysbio.pl/stocks/)
 -   [SynBioSS](http://synbioss.sourceforge.net/)
 -   [FERN](http://www.bio.ifi.lmu.de/software/fern)
--   [StochSim](http://www.ebi.ac.uk/~lenov/stochsim.html)
 
-[]()
+
 
 ### Chapter 9: Spatially extended systems
 
 **Code**
-* 
+-   The main R functions used in this chapter: `StepGillespie1D`, `simTs1D`, `StepCLE1D`, `StepGillespie2D`, `simTs2D`, `StepCLE2D` are included (and documented) in the `smfsb` R package described above
+ 
 **Software**
 -   [MesoRD](http://mesord.sourceforge.net/)
 -   [Smoldyn](http://www.smoldyn.org/)
+-   [StochSim](http://www.ebi.ac.uk/~lenov/stochsim.html)
 
 
 
