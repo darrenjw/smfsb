@@ -1,5 +1,7 @@
 # smfsb
 
+![SMfSB3e](smfsb3e-thumb.jpg)
+
 ### Documentation, models and code relating to the 3rd edition of the textbook Stochastic Modelling for Systems Biology
 
 This page contains links, code snippets, software and other information relating to the third edition of the book, Stochastic Modelling for Systems Biology, to be published by Chapman & Hall/CRC, December 2018 (in time for Christmas!).
