@@ -1,4 +1,4 @@
-# smfsb
+# SMfSB 3e
 
 ![SMfSB3e](smfsb3e-thumb.jpg)
 
