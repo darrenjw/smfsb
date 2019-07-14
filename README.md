@@ -37,6 +37,6 @@ The book has ISBN-10 **113854928-2** and ISBN-13 **978-113854928-9**. It can be 
   * [Chapter 10: Bayesian inference and MCMC](ChapterNotes.md#chapter-10-bayesian-inference-and-mcmc)
   * [Chapter 11: Inference for stochastic kinetic models](ChapterNotes.md#chapter-11-inference-for-stochastic-kinetic-models)
   * [Chapter 12: Conclusions](ChapterNotes.md#chapter-12-conclusions)
-* **Errata** - will link when available
+* [**Errata**](https://www.staff.ncl.ac.uk/d.j.wilkinson/smfsb/3e/errata3e.pdf) - list of known errors and typos
 * Note that you may wish to [download a copy of this repo](https://github.com/darrenjw/smfsb/archive/master.zip) (or clone it) for off-line use
 
