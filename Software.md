@@ -49,7 +49,7 @@ The main function provided by the library is `sbml2spn`, which reads and parses 
 
 ## SBML-shorthand
 
-The book makes extensive use of a shorthand notation for SBML. Python scripts are available for translating back and forth between SBML and SBML-shorthand. These scripts rely on libSBML and the libSBML python bindings, so these must be installed first. See the [SBML-shorthand website](https://www.staff.ncl.ac.uk/d.j.wilkinson/software/sbml-sh/) for further details.
+The book makes extensive use of a shorthand notation for SBML. Python scripts are available for translating back and forth between SBML and SBML-shorthand. These scripts rely on libSBML and the libSBML python bindings, so these must be installed first. See the [SBML-shorthand website](/sbml-sh/) for further details.
 
 ## Scala library - scala-smfsb
 
