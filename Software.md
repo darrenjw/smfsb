@@ -32,7 +32,7 @@ There is an additional optional R Package for parsing SBML models into simulatab
 
 The optional package first requires the `libSBML` R package to be installed, which is not on CRAN or R-Forge, and therefore requires a manual install. Install the `libSBML` R package, following the [libSBML installation instructions](http://sbml.org/Software/libSBML/Downloading_libSBML#R). Be sure to test that the installation has worked before proceeding.
 
-Once you have successfully installed `libSBML`, it should be straightforward to install `smfsbSBML` from a source package. First download the source package: [smfsbSBML_0.1.tar.gz](http://www.staff.ncl.ac.uk/d.j.wilkinson/smfsb/3e/smfsbSBML_0.1.tar.gz). Then install from your *OS command line* (**not** from an R session) with:
+Once you have successfully installed `libSBML`, it should be straightforward to install `smfsbSBML` from a source package. First download the source package: [smfsbSBML_0.1.tar.gz](smfsbSBML_0.1.tar.gz). Then install from your *OS command line* (**not** from an R session) with:
 ```bash
 R CMD INSTALL smfsbSBML_0.1.tar.gz
 ```
