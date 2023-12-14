@@ -49,11 +49,15 @@ The main function provided by the library is `sbml2spn`, which reads and parses 
 
 ## SBML-shorthand
 
-The book makes extensive use of a shorthand notation for SBML. Python scripts are available for translating back and forth between SBML and SBML-shorthand. These scripts rely on libSBML and the libSBML python bindings, so these must be installed first. See the [SBML-shorthand website](https://github.com/darrenjw/sbml-sh/) for further details.
+The book makes extensive use of a shorthand notation for SBML. Python scripts are available for translating back and forth between SBML and SBML-shorthand. These scripts rely on libSBML and the libSBML python bindings, so these must be installed first. See the [SBML-shorthand website](https://github.com/darrenjw/sbml-sh/) for further details. Note that these scripts are built-in to the new experimental python library (detailed below).
 
 ## Scala library - scala-smfsb
 
 There is also a Scala library, `scala-smfsb` associated with the third edition, which re-implements all of the R examples in Scala, a fast, efficient, compiled, functional language. See the [scala-smfsb GitHub repo](https://github.com/darrenjw/scala-smfsb) for further details regarding the use of this library.
+
+## Python library - python-smfsb
+
+There is an experimental new python library under development, [python-smfsb](https://github.com/darrenjw/python-smfsb). It can be simply installed using `pip` - see the website for further details.
 
 
 #### eof

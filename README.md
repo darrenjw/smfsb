@@ -23,6 +23,7 @@ The book has ISBN-10 **113854928-2** and ISBN-13 **978-113854928-9**. It can be 
   * [smfsbSBML](Software.md#additional-r-package---smfsbsbml) (optional R package)
   * [SBML-shorthand](https://github.com/darrenjw/sbml-sh) (Python translation scripts)
   * [scala-smfsb](https://github.com/darrenjw/scala-smfsb) (Scala library)
+  * [python-smfsb](https://github.com/darrenjw/python-smfsb) (Python library, under development)
 * [Models](models/) - Models described in the book, in [SBML](http://sbml.org/Main_Page) and [SBML-shorthand](https://github.com/darrenjw/sbml-sh)
 * [Chapter notes](ChapterNotes.md) including web links
   * [Chapter 1: Introduction to biological modelling](ChapterNotes.md#chapter-1-introduction-to-biological-modelling)
