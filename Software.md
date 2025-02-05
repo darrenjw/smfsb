@@ -30,7 +30,7 @@ There should be sufficient information provided in the vignette in order to get 
 
 There is an additional optional R Package for parsing SBML models into simulatable stochastic Petri net models. It is optional and separate from the main package because it has an additional dependency which is less straightforward to install.
 
-The optional package first requires the `libSBML` R package to be installed, which is not on CRAN or R-Forge, and therefore requires a manual install. Install the `libSBML` R package, following the [libSBML installation instructions](http://sbml.org/Software/libSBML/Downloading_libSBML#R). Be sure to test that the installation has worked before proceeding.
+The optional package first requires the `libSBML` R package to be installed, which is not on CRAN or R-Forge, and therefore requires a manual install. Install the `libSBML` R package, following the [libSBML installation instructions](http://sbml.org/Software/libSBML/Downloading_libSBML#R). Be sure to test that the installation has worked before proceeding. 
 
 Once you have successfully installed `libSBML`, it should be straightforward to install `smfsbSBML` from a source package. First download the source package: [smfsbSBML_0.1.tar.gz](smfsbSBML_0.1.tar.gz). Then install from your *OS command line* (**not** from an R session) with:
 ```bash
@@ -49,7 +49,7 @@ The main function provided by the library is `sbml2spn`, which reads and parses 
 
 ## SBML-shorthand
 
-The book makes extensive use of a shorthand notation for SBML. Python scripts are available for translating back and forth between SBML and SBML-shorthand. These scripts rely on libSBML and the libSBML python bindings, so these must be installed first. See the [SBML-shorthand website](https://github.com/darrenjw/sbml-sh/) for further details. Note that these scripts are built-in to the new experimental python library (detailed below).
+The book makes extensive use of a shorthand notation for SBML. Python scripts are available for translating back and forth between SBML and SBML-shorthand. These scripts rely on libSBML and the libSBML python bindings, so these must be installed first. See the [SBML-shorthand website](https://github.com/darrenjw/sbml-sh/) for further details. Note that these scripts are built-in to the python library (detailed below).
 
 ## Scala library - scala-smfsb
 
@@ -57,7 +57,11 @@ There is also a Scala library, `scala-smfsb` associated with the third edition, 
 
 ## Python library - python-smfsb
 
-There is an experimental new python library under development, [python-smfsb](https://github.com/darrenjw/python-smfsb). It can be simply installed using `pip` - see the website for further details.
+There is now a python package, [python-smfsb](https://github.com/darrenjw/python-smfsb), with complete coverage of all code examples from the book, translated to python. It can natively parse models in SBML and SBML-shorthand. It can be simply installed using `pip` - see the website for further details.
+
+## Python+JAX library - jax-smfsb
+
+All of the core simulation and inference algorithms from `python-smfsb` have been translated to JAX, in the package [jax-smfsb](https://github.com/darrenjw/jax-smfsb). The algorithms in this package typically run around two orders of magnitude faster than the corresponding algorithms in `python-smfsb`, making this library the preferred option for serious research problems. Again, it is `pip`-installable.
 
 
 #### eof
