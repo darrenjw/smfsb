@@ -6,7 +6,7 @@
 
 This page contains links, code snippets, software and other information relating to the third edition of the book, Stochastic Modelling for Systems Biology, published by Chapman & Hall/CRC, November 2018.
 
-The book has ISBN-10 **113854928-2** and ISBN-13 **978-113854928-9**. It can be ordered from [CRC Press](https://www.crcpress.com/Stochastic-Modelling-for-Systems-Biology-Third-Edition/Wilkinson/p/book/9781138549289), [Amazon.com](https://amzn.to/2LAVSSN), [Amazon.co.uk](https://amzn.to/2PeDIZt) and similar book sellers.
+The book has ISBN-10 **113854928-2**, ISBN-13 **978-113854928-9**, and DOI <https://doi.org/10.1201/9781351000918>. It can be ordered from [CRC Press](https://www.crcpress.com/Stochastic-Modelling-for-Systems-Biology-Third-Edition/Wilkinson/p/book/9781138549289), [Amazon.com](https://amzn.to/2LAVSSN), [Amazon.co.uk](https://amzn.to/2PeDIZt) and similar book sellers.
 
 ### New in the third edition
 
@@ -24,7 +24,7 @@ The book has ISBN-10 **113854928-2** and ISBN-13 **978-113854928-9**. It can be 
   * [SBML-shorthand](https://github.com/darrenjw/sbml-sh) (Python translation scripts)
   * [scala-smfsb](https://github.com/darrenjw/scala-smfsb) (Scala library)
   * [python-smfsb](https://github.com/darrenjw/python-smfsb) (Python library, using numpy and scipy, with complete coverage of the book)
-  * [jax-smfsb](https://github.com/darrenjw/jax-smfsb) (Python library, using [JAX](https://jax.readthedocs.io/), with coverage of all main simulation and inference functions)
+  * [**jax-smfsb**](https://github.com/darrenjw/jax-smfsb) (Python library, using [JAX](https://jax.readthedocs.io/), with coverage of all main simulation and inference functions)
 * [Models](models/) - Models described in the book, in [SBML](http://sbml.org/Main_Page) and [SBML-shorthand](https://github.com/darrenjw/sbml-sh)
 * [Chapter notes](ChapterNotes.md) including web links
   * [Chapter 1: Introduction to biological modelling](ChapterNotes.md#chapter-1-introduction-to-biological-modelling)
