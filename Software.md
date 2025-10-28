@@ -30,7 +30,7 @@ There should be sufficient information provided in the vignette in order to get 
 
 There is an additional optional R Package for parsing SBML models into simulatable stochastic Petri net models. It is optional and separate from the main package because it has an additional dependency which is less straightforward to install.
 
-The optional package first requires the `libSBML` R package to be installed, which is not on CRAN or R-Forge, and therefore requires a manual install. Install the `libSBML` R package, following the [libSBML installation instructions](http://sbml.org/Software/libSBML/Downloading_libSBML#R). Be sure to test that the installation has worked before proceeding. 
+The optional package first requires the `libSBML` R package to be installed, which is not on CRAN or R-Forge, and therefore requires a manual install. Install the `libSBML` R package, following the [libSBML installation instructions](https://sbml.org/software/libsbml/libsbml-docs/installation/#r). Be sure to test that the installation has worked before proceeding. 
 
 Once you have successfully installed `libSBML`, it should be straightforward to install `smfsbSBML` from a source package. First download the source package: [smfsbSBML_0.1.tar.gz](smfsbSBML_0.1.tar.gz). Then install from your *OS command line* (**not** from an R session) with:
 ```bash
